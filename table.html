@@ -1,0 +1,145 @@
+<html>
+<head>
+  
+  <title>Web Development Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.2.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="table_script.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#"><img src="images/noodle.png" alt=""></a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><font size = "+1">Home</font></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="table.html"><font size = "+1">Project Manager</font></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="financeteam.html"><font size = "+1">Finance Team</font></a>
+        </li>
+
+      </ul>
+    </div>
+    </nav>
+   
+  <style>  
+ body {text-align:center} 
+  </style> 
+ 
+  <h1> <font size = "+3">Team Budget Planner</font> </h1>
+  
+
+   
+   
+
+      
+       
+  
+  
+  
+  <div class=“container-fluid”> 
+		<p> <h4> Welcome Project Manager. Here is the list of vendors and their associated project details.</h4>
+    </p>
+    
+   
+
+
+
+		
+
+	</div>
+ 	<style>  
+   body {text-align:center} 
+  </style> 
+
+
+<div id="wrapper">
+
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+<th>Vendor</th>
+<th>ProjectName</th>
+<th>ManagerName</th>
+<th>Budget</th>
+<th>Action</th>
+</tr>
+
+<tr id="row1">
+<td id="vendor_row1">Apple</td>
+<td id="projectName_row1">Appollo</td>
+<td id="managerName_row1">Indra</td>
+<td id="budget_row1">200000
+</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+<td id="vendor_row2">Lenova</td>
+<td id="projectName_row2">Lenzit</td>
+<td id="managerName_row2">Edith</td>
+<td id="budget_row2">35000</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="vendor_row3">IBM</td>
+<td id="projectName_row3">Rover</td>
+<td id="managerName_row3">Gandhi</td>
+<td id="budget_row3">430000</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr>
+<td><input type="text" id="new_vendor"></td>
+<td><input type="text" id="new_projectName"></td>
+<td><input type="text" id="new_managerName"></td>
+<td><input type="text" id="new_budget"></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+
+</table>
+</div>
+
+<nav aria-label="Pagination Demo">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="index.html"><font size = "+1">Previous</font></a></li>
+        <li class="page-item"><a class="page-link" href="index.html"><font size = "+1">1</font></a></li>
+        <li class="page-item"><a class="page-link" href="table.html"><font size = "+1">2</font></a></li>
+         <li class="page-item"><a class="page-link" href="financeteam.html"><font size = "+1">3</font></a></li>
+        <!--  <li class="page-item"><a class="page-link" href="nav.html"><font size = "+1">4</font></a></li>-->
+        <li class="page-item"><a class="page-link" href="financeteam.html"><font size = "+1">Next</font></a></li>
+      </ul>
+    </nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.2.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+</body>
+</html>
